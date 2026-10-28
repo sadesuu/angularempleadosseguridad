@@ -1,0 +1,24 @@
+<header class="topbar">
+  <a class="brand" routerLink="/" aria-label="Ir al inicio">
+    <span class="brand-mark" aria-hidden="true">E</span>
+    <span>Empleados</span>
+  </a>
+
+  <nav class="navigation" aria-label="Navegación principal">
+    <a class="navigation-link" routerLink="/subordinados" routerLinkActive="active">
+      <span class="navigation-icon" aria-hidden="true">👥</span>
+      <span>Mis subordinados</span>
+    </a>
+
+    <a
+      class="profile-link"
+      [class.profile-link--registered]="isRegistered"
+      [routerLink]="isRegistered ? '/perfil' : '/'"
+      routerLinkActive="active"
+      [attr.aria-label]="isRegistered ? 'Ver mi perfil' : 'Iniciar sesión'"
+      title="{{ isRegistered ? 'Mi perfil' : 'Iniciar sesión' }}"
+    >
+      <span class="profile-icon" aria-hidden="true">♙</span>
+    </a>
+  </nav>
+</header>

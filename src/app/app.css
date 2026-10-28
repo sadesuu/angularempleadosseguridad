@@ -1,0 +1,12 @@
+ :host {
+  background: #f6f8fc;
+  color: #23304a;
+  display: block;
+  min-height: 100dvh;
+}
+
+.page-content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem 7%;
+}
